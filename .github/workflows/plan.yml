@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Create a plan for an example terraform configuration
     env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GHA_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
